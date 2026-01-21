@@ -1,0 +1,9 @@
+[workspace]
+resolver = "3"
+members = ["ch03"]
+
+[workspace.package]
+version = "0.0.1"
+authors = ["Simon Mayer"]
+description = "Following along the small proglets in The Linux Programming Interface"
+edition = "2024"

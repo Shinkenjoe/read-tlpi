@@ -1,0 +1,9 @@
+[package]
+name = "ch03"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+edition.workspace = true
+
+[dependencies]
+libc = "0.2"
