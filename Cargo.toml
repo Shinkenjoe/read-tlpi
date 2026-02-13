@@ -10,3 +10,4 @@ edition = "2024"
 
 [workspace.dependencies]
 libc = "0.2"    
+utils = { path = "./utils" }
