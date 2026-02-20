@@ -42,10 +42,10 @@ mod tests {
     
     #[test]
     fn test_getopt_full_call() {
-        let mut program_vec: Vec<c_char> = utils::into_c_char_vec(b"t_getopt");
-        let mut arg1_vec: Vec<c_char> = utils::into_c_char_vec(b"-x");
-        let mut arg2_vec: Vec<c_char> = utils::into_c_char_vec(b"-p");
-        let mut arg3_vec: Vec<c_char> = utils::into_c_char_vec(b"hello");
+        let mut program_vec: Vec<c_char> = tlpi::into_c_char_vec(b"t_getopt");
+        let mut arg1_vec: Vec<c_char> = tlpi::into_c_char_vec(b"-x");
+        let mut arg2_vec: Vec<c_char> = tlpi::into_c_char_vec(b"-p");
+        let mut arg3_vec: Vec<c_char> = tlpi::into_c_char_vec(b"hello");
         let argv = [program_vec.as_mut_ptr(), 
                     arg1_vec.as_mut_ptr(), 
                     arg2_vec.as_mut_ptr(), 
@@ -64,7 +64,7 @@ mod tests {
             assert_eq!(arg_read as u8, b'p');            
             assert_eq!(optind as i32, 4);
           
-            assert_eq!(utils::read_cstr(optarg).unwrap(), "hello");                        
+            assert_eq!(tlpi::read_cstr(optarg).unwrap(), "hello");                        
         }        
          
     }

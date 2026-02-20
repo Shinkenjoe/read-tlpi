@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/shinken/comp/genel/os/linux/read-tlpi/tlpi/tlpi/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

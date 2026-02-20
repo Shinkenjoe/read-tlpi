@@ -1,0 +1,3 @@
+/home/shinken/comp/genel/os/linux/read-tlpi/tlpi/tlpi/build/CMakeFiles/tlpi.dir
+/home/shinken/comp/genel/os/linux/read-tlpi/tlpi/tlpi/build/CMakeFiles/edit_cache.dir
+/home/shinken/comp/genel/os/linux/read-tlpi/tlpi/tlpi/build/CMakeFiles/rebuild_cache.dir

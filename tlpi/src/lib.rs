@@ -1,4 +1,10 @@
+#![allow(non_upper_case_globals)]
+#![allow(non_camel_case_types)]
+#![allow(non_snake_case)]
 use std::ffi::{c_char, CStr };
+
+include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
+
 
 
 /// create a Vec<c_char> as buffer holder to be able to give a *mut c_char to C space
@@ -26,6 +32,7 @@ pub unsafe  fn read_cstr(strptr: *const c_char) -> Option<String>{
     }
 }
     
+
 
 
 #[cfg(test)]

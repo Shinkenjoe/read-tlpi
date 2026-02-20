@@ -1,10 +1,9 @@
 [package]
-name = "getopt"
+name = "tlpi"
 version.workspace = true
 authors.workspace = true
 description.workspace = true
 edition.workspace = true
 
-[dependencies]
-libc = { workspace = true }
-tlpi = { path = "../tlpi" }
+[build-dependencies]
+bindgen = { workspace = true }

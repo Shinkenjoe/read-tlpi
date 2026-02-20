@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["ch03", "getopt", "utils"]
+members = ["ch03", "ch04", "getopt", "tlpi"]
 
 [workspace.package]
 version = "0.0.1"
@@ -11,3 +11,4 @@ edition = "2024"
 [workspace.dependencies]
 libc = "0.2"    
 utils = { path = "./utils" }
+bindgen = "0.72.1"
