@@ -10,5 +10,6 @@ edition = "2024"
 
 [workspace.dependencies]
 libc = "0.2"    
-utils = { path = "./utils" }
+tlpi = { path = "./tlpi" }
 bindgen = "0.72.1"
+clap = { version = "4.5.60", features = ["derive"] }

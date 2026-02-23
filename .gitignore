@@ -3,3 +3,5 @@
 /tlpi.pdf
 /getopt/clib/build/
 /tlpi-dist/
+/target/
+/.*/files/

@@ -8,6 +8,7 @@ edition.workspace = true
 [dependencies]
 libc = { workspace = true }
 tlpi = { path="../tlpi" }
+clap = { workspace = true }
 
 [build-dependencies]
 bindgen = { workspace = true }

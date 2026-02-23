@@ -69,6 +69,7 @@ fn main() {
         .allowlist_function("getLong")
         .allowlist_function("getInt")
         .allowlist_function("errExit")
+        .allowlist_item("GN_.*")        
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
