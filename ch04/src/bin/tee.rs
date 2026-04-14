@@ -32,5 +32,4 @@ fn main(){
     if file.write(&buf).expect("write") != num_read {
         panic!("different number of bytes written to file than read");
     }    
-
 }

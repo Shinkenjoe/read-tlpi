@@ -1,0 +1,12 @@
+* 5  I/O Further Details 
+** 5.9 Nonblock I/O
+What effect does specifying the `O_NONBLOCK`  flag have, when opening a file? 
+
+- If the file can't be opened immediately (eg with FIFOs), then `open()` returns an error instead of blocking.
+- After a successful `open()`, subsequent I/O operation are also nonblocking. If 
+an I/O system call can't complete immediately, then either a partiial data transfer 
+is performed or the system call fails with one of the errors `EAGAIN` or `EWOULDBLOCK` (which
+one depending on the system call). 
+
+For enabling this behaviour with pipes and sockets you need to use `fcntl() F_SETFL`
+`O_NONBLOCK` has an effect for regular files when mandatory file locking is employed.

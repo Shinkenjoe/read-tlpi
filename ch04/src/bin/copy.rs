@@ -13,6 +13,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let input_fd: c_int;
     let output_fd : c_int;
     let mut num_read: ssize_t;
+    // is this UB ? i think so, the buffer will not be totally initialized
+    // just giving a partly initialized buffer is UB by definition (decsision) in Rust. 
+    // as i use this buffer only with C functions i dunno. 
     let mut buf = MaybeUninit::<[c_char; BUF_SIZE]>::uninit();
     
     let argv = args()

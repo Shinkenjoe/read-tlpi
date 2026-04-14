@@ -1,0 +1,10 @@
+[package]
+name = "ch05"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+edition.workspace = true
+
+[dependencies]
+libc = { workspace = true }
+tlpi = { workspace = true }

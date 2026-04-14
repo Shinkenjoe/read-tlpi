@@ -120,6 +120,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "ch05"
+version = "0.0.1"
+dependencies = [
+ "libc",
+ "tlpi",
+]
+
+[[package]]
 name = "clang-sys"
 version = "1.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
