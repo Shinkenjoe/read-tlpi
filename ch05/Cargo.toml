@@ -8,3 +8,4 @@ edition.workspace = true
 [dependencies]
 libc = { workspace = true }
 tlpi = { workspace = true }
+clap = { workspace = true }
