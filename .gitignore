@@ -4,3 +4,4 @@
 /target/
 /*/files/
 /tlpi/build/
+/target/rust-analyzer/
