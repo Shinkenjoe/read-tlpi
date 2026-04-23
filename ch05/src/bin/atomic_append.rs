@@ -2,6 +2,9 @@ use clap::{ Parser };
 use libc::{O_APPEND, O_CREAT, O_WRONLY, SEEK_END, c_int, close, lseek, open, write};
 use std::{ffi::{CString, c_void}, path::Path};
 
+// to be called directly in the /target directory, cause i dunno how to supply 
+// paths with a cargo call (which is probably possible) 
+
 #[derive(Parser)]
 #[command(version, about,
           long_about = "examine the diffrence between append and seek to end before write")]

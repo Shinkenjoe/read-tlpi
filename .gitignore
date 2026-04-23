@@ -3,5 +3,7 @@
 /tlpi-dist/
 /target/
 /*/files/
-/tlpi/build/
+/tlpi/tlpi/build/
 /target/rust-analyzer/
+*.o
+*.a
